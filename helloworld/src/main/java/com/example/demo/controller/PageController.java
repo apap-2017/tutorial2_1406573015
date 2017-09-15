@@ -16,24 +16,23 @@ import org.springframework.web.bind.annotation.RequestParam;
 			return "hello";
 		}
 		
+		/*
 		@RequestMapping("/greeting")
-		public String greeting(@RequestParam(value = "name", required= false, defaultValue="") String name, Model model)
+		public String greeting(@RequestParam(value = "name", required= false, defaultValue="dunia") String name, Model model)
 		{
 			model.addAttribute ("name", name);
 			return "greeting";
-		}
-		
+		}*/
+
 		@RequestMapping(value = {"/greeting", "greeting/{name}"})
 		public String greetingPath(@PathVariable Optional<String> name, Model model) {
 		if (name.isPresent()) {
 		model.addAttribute("name", name.get());
 		} else {
-		model.addAttribute("name", "dengklek");
+			model.addAttribute("name", "dengklek");
 		}
-		return "greeting";
+			return "greeting";
 		}
-
-
 		
 		@RequestMapping("/perkalian")
 		public String perkalian(@RequestParam(value = "a", defaultValue="0") int a, @RequestParam(value = "b", defaultValue="0") int b,	Model model)

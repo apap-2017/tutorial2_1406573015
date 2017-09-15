@@ -13,10 +13,12 @@ Latihan Request​ ​Parameter
 2. 	Sebelum header dirubah localhost:8080/greeting akan terjadi whitelabel error
 	Tetapi setelah header dirubah hasilnya adalah string"selamat datang null!"
 3. hasilnya adalah string"selamat datang dunia!"
-4.
+4. Karena adanya tag th:text dari thymeleaf yang akan menggantikan teks pada tag html yang sama
 
 Path​ ​Variable
 
-1.  Awalnya hanya meengeluarkan/menampilkan string selamat datang !
-	Setelah dirubah terjadi whitelabel error
-2. Selamat datang chanek!
+1.  Awalnya ketika mengakses localhost:8080/greeting/ hanya menampilkan string selamat datang dunia!
+	Setelah dirubah terjadi whitelabel error hal ini terjadi karena masih ada request mapping (/greeting)
+	yang ada pada method greeting. Namun setelah request mapping(/greeting) pada method greeting diganti maka
+	akan menampilkan string "Selamat datang dengklek!"
+2.  localhost:8080/greeting/chanek akan menampilkan Selamat datang chanek!
