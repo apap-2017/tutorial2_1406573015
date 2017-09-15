@@ -1,0 +1,22 @@
+Latihan Project Hello World
+
+1. Tidak terjadi compile error namun saat di run pada localhost8080/hello 
+muncul error page whitelabel page error
+
+2. Tidak terjadi error sama sekali. Page Hello masih muncul
+
+3. Tidak ada compile error tapi terjadi error pada localhost8080/hello 
+muncul whitelabel error . String return "hello" menandakan page html dengan nama hello
+
+Latihan Request​ ​Parameter
+1. Hasilnya adalah string"selamat datang chanek!"
+2. 	Sebelum header dirubah localhost:8080/greeting akan terjadi whitelabel error
+	Tetapi setelah header dirubah hasilnya adalah string"selamat datang null!"
+3. hasilnya adalah string"selamat datang dunia!"
+4.
+
+Path​ ​Variable
+
+1.  Awalnya hanya meengeluarkan/menampilkan string selamat datang !
+	Setelah dirubah terjadi whitelabel error
+2. Selamat datang chanek!
